@@ -1,0 +1,18 @@
+
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated folders
+uploads/
+reports/
+extracted_text/
+
+# VS Code
+.vscode/
+
+# Windows
+desktop.ini
