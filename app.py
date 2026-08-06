@@ -2,6 +2,7 @@ import streamlit as st
 import os
 from datetime import datetime
 from utils.text_extractor import extract_text
+from utils.summarizer import generate_summary
 
 # --------------------------------------------------
 # Page Configuration
@@ -101,10 +102,22 @@ if uploaded_files:
         st.write(f"**File Size:** {file_size_kb:.2f} KB")
         st.write(f"**Uploaded At:** {datetime.now().strftime('%d-%m-%Y %H:%M:%S')}")
         extracted_text = extract_text(file_path)
+        st.write("Reached summarizer")
+
+        summary = generate_summary(extracted_text)
+
+        st.write("Summary generated")
         st.subheader("📄 Extracted Text")
 
         st.text_area(
             "Document Content",
             extracted_text,
             height=300
+        )
+        st.subheader("🤖 AI Summary")
+
+        st.text_area(
+        "Summary",
+        summary,
+        height=200
         )
