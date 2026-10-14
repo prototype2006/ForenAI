@@ -20,3 +20,17 @@ Release-26.09.0-0/
 tesseract-ocr-w64-setup-*.exe
 .venv/
 uploads/
+
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local evidence and generated files
+uploads/
+extracted_text/
+reports/
+
+# OCR dependencies installed locally
+Release-26.09.0-0/
+tesseract-ocr-w64-setup-*.exe
