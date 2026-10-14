@@ -16,3 +16,7 @@ extracted_text/
 
 # Windows
 desktop.ini
+Release-26.09.0-0/
+tesseract-ocr-w64-setup-*.exe
+.venv/
+uploads/
