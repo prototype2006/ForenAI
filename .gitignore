@@ -30,7 +30,7 @@ __pycache__/
 uploads/
 extracted_text/
 reports/
-
+.env
 # OCR dependencies installed locally
 Release-26.09.0-0/
 tesseract-ocr-w64-setup-*.exe
